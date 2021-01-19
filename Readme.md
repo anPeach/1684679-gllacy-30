@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Nastya Pisarenko](https://up.htmlacademy.ru/htmlcss/30/user/1684679).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Аверин](https://htmlacademy.ru/profile/id1061531).
 
 ---
 

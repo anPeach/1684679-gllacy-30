@@ -285,8 +285,20 @@
 
 .sort_form {
   display: grid;
-  grid-template-columns: min-content min-content 1fr;
+  grid-template-columns: min-content min-content 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  column-gap: 15px;;
+}
+
+.fat {
+  grid-column: 3/-1;
+
+}
+
+.filler {
+  width: 710px;
+  grid-column: 1/4;
+  height: 35px;
 }
 
 .catalog_main_title {
@@ -314,6 +326,8 @@
 }
 
 .apply_button {
+  width: 145px;
+  height: 35px;
   font-size: 16px;
   line-height: 18px;
   background: rgba(255, 255, 255, 0.2);
@@ -322,6 +336,15 @@
   border-radius: 20px;
   color: var(--text-basic-color-white);
   padding: 5px 14px;
+}
+
+.catalog_ice_creams {
+  display: grid;
+}
+
+.pages_list {
+  grid-column: 1/-1;
+  justify-self: end;
 }
 
 .main_footer {

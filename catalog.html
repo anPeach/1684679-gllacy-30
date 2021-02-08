@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="css/common.css"/>
 
   </head>
+
   <body class="body_page">
-    <header class="main_header">
+
+    <header class="main_header container">
       <a href="index.html" class="main_header_logo">
         <img
           src="img/optimizedSVG/logo.svg"
@@ -24,10 +26,10 @@
         >
       </a>
       <nav class="main_navigation">
-        <ul class="navigation_list">
+        <ul class="navigation_list list_appearance">
           <li class="navigation_item">
             <a class="link navigation_item_link navigation_item_link_active" href="#">Каталог</a>
-            <ul class="catalog_list">
+            <ul class="catalog_list list_appearance">
               <li class="catalog_item">
                 <a class="link" href="catalog.html">Сливочное</a>
               </li>
@@ -48,7 +50,7 @@
         </ul>
       </nav>
 
-      <ul class="user_actions_list">
+      <ul class="user_actions_list list_appearance">
         <li class="user_actions_item">
           <section class="modal modal_searching">
             <a class="link user_action_link " href="#">Поиск</a>
@@ -92,10 +94,10 @@
       </section>
     </header>
 
-    <main>
+    <main class="main_container container">
       <section class="breadcrumbs">
         <h2>Сливочное</h2>
-        <ul class="breadcrumbs_list">
+        <ul class="breadcrumbs_list list_appearance">
           <li clas="breadcrumbs_item"><a class="link breadcrumbs_link" href="index.html">Главная</a></li>
           <li clas="breadcrumbs_item"><a class="link breadcrumbs_link" href="#">Каталог</a></li>
           <li clas="breadcrumbs_item"><a class="link breadcrumbs_link" href="catalog.html">Сливочное</a></li>
@@ -107,21 +109,25 @@
       <section>
         <h2>Фильтр мороженого</h2>
 
-        <form method="GET" action="#">
-          <label for="sort label">Сортировка:</label>
-          <select id="sort" class="sort_value background_transparent_white">
-            <option value="by_popularity">по популярности</option>
-            <option value="first_inexpensive">сначала недорогие</option>
-            <option value="first_expensive">сначала дорогие</option>
-            <option value="by_fat">по жирности</option>
-          </select>
+        <form method="GET" action="#" class="sort_form">
+          <div>
+            <label for="sort label">Сортировка:</label>
+            <select id="sort" class="sort_value background_transparent_white">
+              <option value="by_popularity">по популярности</option>
+              <option value="first_inexpensive">сначала недорогие</option>
+              <option value="first_expensive">сначала дорогие</option>
+              <option value="by_fat">по жирности</option>
+            </select>
+          </div>
 
-          <label for="price label">Цена:</label>
-          <input type="range" id="price" name="price"/>
+          <div>
+            <label for="price label">Цена:</label>
+            <input type="range" id="price" name="price"/>
+          </div>
 
-          <fieldset class="background_transparent_white">
+          <fieldset class="background_transparent_white fat">
             <legend class="label">Жирности:</legend>
-            <ul>
+            <ul class="list_appearance">
               <li>
                 <input type="radio" name="fat" id="fat_0"/>
                 <label for="fat_0" class="sort_value">0%</label>
@@ -141,7 +147,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="background_transparent_white">
+          <fieldset class="background_transparent_white filler">
             <legend class="label">Наполнители:</legend>
 
             <input type="checkbox" name="chocolate" id="chocolate"/>
@@ -163,9 +169,9 @@
         </form>
       </section>
 
-      <section class="ice_creams">
+      <section class="catalog_ice_creams ice_creams">
         <h2>Список товаров</h2>
-        <ul class="ice_creams_list">
+        <ul class="ice_creams_list list_appearance">
           <li class="ice_creams_item">
             <img src="img/optimizedJPEG/orangeIceCream.jpg"  alt="" width="267" height="267"/>
             <p class="item_price">310&#x20bd<sub>/кг</sub></p>
@@ -251,7 +257,7 @@
             </h3>
           </li>
         </ul>
-        <ul>
+        <ul class="list_appearance pages_list">
           <li>
             <a class="link">1</a>
           </li>
@@ -269,11 +275,11 @@
     </main>
 
 
-    <footer class="main_footer">
+    <footer class="main_footer container">
       <section class="footer_social">
         <h2>Социальные сети</h2>
 
-        <ul class="social_list">
+        <ul class="social_list list_appearance">
           <li class="social_item"><a class="link" href="#">Facebook</a></li>
           <li class="social_item"><a class="link" href="#">Вконтакте</a></li>
           <li class="social_item"><a class="link" href="#">Instagram</a></li>
@@ -282,7 +288,7 @@
       </section>
       <section class="footer_info">
         <h2>Общая информация</h2>
-        <ul class="footer_info_list">
+        <ul class="footer_info_list list_appearance">
           <li class="footer_info_item">
             <a class="link" href="#">Для поставщиков</a>
           </li>
@@ -297,8 +303,8 @@
           </li>
         </ul>
 
-        <p class="footer_copyright">Сделано в <span>HTML academy</span> &#169; 2019</p>
       </section>
+      <p class="footer_copyright">Сделано в <span>HTML academy</span> &#169; 2019</p>
     </footer>
   </body>
 </html>

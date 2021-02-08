@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Глейси</title>
@@ -10,23 +10,22 @@
     <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/common.css" />
   </head>
   <body class="body_page">
-    <header class="main_header">
+    <header class="main_header container">
       <a href="index.html" class="main_header_logo">
         <img
           src="img/optimizedSVG/logo.svg"
           width="154"
           height="64"
-          alt="Gllacy shop"
-        >
+          alt="Gllacy shop"/>
       </a>
       <nav class="main_navigation">
-        <ul class="navigation_list">
+        <ul class="navigation_list list_appearance">
           <li class="navigation_item">
             <a class="link navigation_item_link" href="#">Каталог</a>
-            <ul class="catalog_list">
+            <ul class="catalog_list list_appearance">
               <li class="catalog_item">
                 <a class="link" href="catalog.html">Сливочное</a>
               </li>
@@ -47,10 +46,10 @@
         </ul>
       </nav>
 
-      <ul class="user_actions_list">
+      <ul class="user_actions_list list_appearance">
         <li class="user_actions_item">
           <section class="modal modal_searching">
-            <a class="link user_action_link " href="#">Поиск</a>
+            <a class="link user_action_link" href="#">Поиск</a>
             <form class="searching_form" action="#" method="get">
               <input type="text" placeholder="Крем-брюле" />
             </form>
@@ -91,7 +90,7 @@
       </section>
     </header>
 
-    <main class="container">
+    <main class="main_container container">
       <section class="slider">
         <h2>Слайдер</h2>
         <img
@@ -111,7 +110,7 @@
       <section class="shares">
         <h2>Акции</h2>
 
-        <ul class="shares_list">
+        <ul class="shares_list list_appearance">
           <li class="shares_item">
             <p class="shares_item_title">Малинка даром!</p>
             <p>
@@ -133,7 +132,8 @@
 
       <section class="ice_creams">
         <h2>Виды мороженого</h2>
-        <ul class="ice_creams_list">
+
+        <ul class="ice_creams_list list_appearance">
           <li class="ice_creams_item">
             <img
               src="img/optimizedJPEG/orangeIceCream.jpg"
@@ -183,7 +183,7 @@
               width="267"
               height="267"
             />
-            <p  class="item_price">415&#x20bd;<sub>/кг</sub></p>
+            <p class="item_price">415&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
                 >Сливочное крем-брюле с карамельной подливкой
@@ -198,7 +198,7 @@
           Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
           собственного производства на развес
         </h1>
-        <ul class="main_info_list">
+        <ul class="main_info_list list_appearance">
           <li class="main_info_item">
             <p>
               Все наше мороженое изготавливается на собственном производстве, с
@@ -224,33 +224,37 @@
         </ul>
       </section>
 
-      <section class="new">
-        <h2 class="new_title">Новое в нашем блоге</h2>
-        <a class="link new_item" href="#"
-          >10 способов сервировки<br />
-          фруктовых щербетов<br />
-          к столу</a
-        >
-      </section>
+      <div class="columns">
+        <section class="new">
+          <h2 class="new_title">Новое в нашем блоге</h2>
+          <a class="link new_item" href="#"
+            >10 способов сервировки<br />
+            фруктовых щербетов<br />
+            к столу</a
+          >
+        </section>
 
-      <section class="follow">
-        <h2>Подписка на рассылку</h2>
-        <p>
-          Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
-          самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-          всякой ненужной ерунды. Честно =)
-        </p>
-        <form class="follow_form" action="#" method="POST">
-          <input type="email" placeholder="email@example.com" />
-          <input class="button" type="submit" value="Отправить" />
-        </form>
-      </section>
+        <section class="follow">
+          <h2>Подписка на рассылку</h2>
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего
+            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
+            всякой ненужной ерунды. Честно =)
+          </p>
+          <form class="follow_form" action="#" method="POST">
+            <input type="email" placeholder="email@example.com" />
+            <input class="button" type="submit" value="Отправить" />
+          </form>
+        </section>
+      </div>
 
       <section class="contacts">
         <h2>Адрес и контакты</h2>
 
         <p>Адрес главного офиса и офлайн-магазина:</p>
-        <p class="contacts_item">ул. Большая Конюшенная, 19/8, Санкт-Петербург</p>
+        <p class="contacts_item">
+          ул. Большая Конюшенная, 19/8, Санкт-Петербург
+        </p>
 
         <p>Для заказов по телефону:</p>
         <p class="contacts_item">8 812 450-25-25</p>
@@ -260,11 +264,11 @@
       </section>
     </main>
 
-    <footer class="main_footer">
+    <footer class="main_footer container">
       <section class="footer_social">
         <h2>Социальные сети</h2>
 
-        <ul class="social_list">
+        <ul class="social_list list_appearance">
           <li class="social_item"><a class="link" href="#">Facebook</a></li>
           <li class="social_item"><a class="link" href="#">Вконтакте</a></li>
           <li class="social_item"><a class="link" href="#">Instagram</a></li>
@@ -273,7 +277,7 @@
       </section>
       <section class="footer_info">
         <h2>Общая информация</h2>
-        <ul class="footer_info_list">
+        <ul class="footer_info_list list_appearance">
           <li class="footer_info_item">
             <a class="link" href="#">Для поставщиков</a>
           </li>
@@ -288,8 +292,10 @@
           </li>
         </ul>
 
-        <p class="footer_copyright">Сделано в <span>HTML academy</span> &#169; 2019</p>
       </section>
+      <p class="footer_copyright">
+        Сделано в <span>HTML academy</span> &#169; 2019
+      </p>
     </footer>
 
     <section class="modal modal_contact_us">

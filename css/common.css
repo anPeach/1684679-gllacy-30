@@ -33,7 +33,12 @@
   font-style: normal;
 }
 
+.page {
+  height: 100%;
+}
+
 .body_page {
+  min-width: 1260px;
   font-family: "Roboto", -apple-system, "Segoe UI", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -41,6 +46,15 @@
   color: var(--text-basic-color-white);
   font-size: 16px;
   line-height: 22px;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.list_appearance {
+  list-style: none;
+  padding: 0;
 }
 
 .link {
@@ -50,6 +64,16 @@
 .link:hover,
 .link:active {
   color: #ffbc9e;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main_header {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
 }
 
 .navigation_item .link {
@@ -96,6 +120,10 @@
   line-height: 16px;
 }
 
+.user_actions_list {
+  justify-self: end;
+}
+
 .user_actions_item {
   font-size: 14px;
   line-height: 16px;
@@ -120,6 +148,11 @@
   color: #e84d37;
 }
 
+.header_info {
+  grid-column: -2/-1;
+  justify-self: end;
+}
+
 .header_info p:first-child {
   font-size: 14px;
   line-height: 16px;
@@ -130,9 +163,23 @@
   line-height: 24px;
 }
 
+.main_container {
+  display: grid;
+}
+
+.slider {
+  text-align: center;
+}
+
 .shares_item {
   font-size: 18px;
   line-height: 22px;
+}
+
+.shares_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
 }
 
 .shares_item_title {
@@ -142,6 +189,12 @@
 
 .link.button {
   text-decoration: none;
+}
+
+.ice_creams_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 25px;
 }
 
 .ice_creams_item .link {
@@ -166,6 +219,12 @@
 .main_info_item {
   font-weight: 400;
   color: var(--text-basic-color-black);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25px;
 }
 
 .new {
@@ -199,6 +258,8 @@
   line-height: 20px;
   font-weight: 400;
   color: var(--text-basic-color-black);
+  grid-column: 1/-1;
+  justify-self: end;
 }
 
 .contacts_item {
@@ -214,13 +275,24 @@
   color: var(--text-basic-color-black);
 }
 
+.breadcrumbs {
+  grid-column: 1/-1;
+}
+
 .breadcrumbs_link {
   font-weight: 400;
+}
+
+.sort_form {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .catalog_main_title {
   font-size: 35px;
   line-height: 41px;
+  grid-column: 1/-1;
 }
 
 .label {
@@ -252,12 +324,21 @@
   padding: 5px 14px;
 }
 
+.main_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .footer_info {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  justify-self: center;
 }
 
+.footer_copyright {
+  justify-self: end;
+}
 
 .footer_copyright span {
   text-decoration: underline;

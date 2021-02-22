@@ -24,10 +24,10 @@
         />
       </a>
       <nav class="main_navigation">
-        <ul class="navigation_list list_appearance">
+        <ul class="main_navigation_list list_appearance">
           <li class="navigation_item">
             <a
-              class="link navigation_item_link navigation_item_link_active"
+              class="link navigation_item_link navigation_item_link_active navigation_item_link_catalog"
               href="#"
               >Каталог</a
             >
@@ -55,7 +55,9 @@
       <ul class="user_actions_list list_appearance">
         <li class="user_actions_item">
           <section class="modal modal_searching">
-            <a class="link user_action_link" href="#">Поиск</a>
+            <a class="link user_action_link user_action_link_search" href="#"
+              >Поиск</a
+            >
             <form class="searching_form" action="#" method="get">
               <input type="text" placeholder="Крем-брюле" />
             </form>
@@ -63,8 +65,10 @@
         </li>
         <li class="user_actions_item">
           <section class="modal modal_login">
-            <h2>Личный кабинет</h2>
-            <a class="link user_action_link" href="#">Вход</a>
+            <h2 class="visually_hidden">Личный кабинет</h2>
+            <a class="link user_action_link user_action_link_enter" href="#"
+              >Вход</a
+            >
             <form class="login_form" action="#" method="POST">
               <input type="email" placeholder="email@example.com" />
               <input
@@ -82,7 +86,9 @@
         </li>
         <li class="user_actions_item">
           <section class="modal modal_cart">
-            <a class="link user_action_link" href="#">Корзина</a>
+            <a class="link user_action_link user_action_link_cart" href="#"
+              >Корзина</a
+            >
             <form class="cart_form" action="#" method="POST">
               <input class="button" type="submit" value="Оформить заказ" />
             </form>
@@ -98,7 +104,7 @@
 
     <main class="main_container container">
       <section class="breadcrumbs">
-        <h2>Сливочное</h2>
+        <h2 class="visually_hidden">Сливочное</h2>
         <ul class="breadcrumbs_list list_appearance">
           <li class="breadcrumbs_item">
             <a class="link breadcrumbs_link" href="index.html">Главная</a>
@@ -115,7 +121,7 @@
       <h1 class="catalog_main_title">Сливочное мороженое</h1>
 
       <section>
-        <h2>Фильтр мороженого</h2>
+        <h2 class="visually_hidden">Фильтр мороженого</h2>
 
         <form method="GET" action="#" class="sort_form">
           <div class="sort_select">
@@ -159,7 +165,9 @@
 
           <fieldset class="sort_filler">
             <legend class="label">Наполнители:</legend>
-            <ul class="list_appearance background_transparent_white filler_list">
+            <ul
+              class="list_appearance background_transparent_white filler_list"
+            >
               <li>
                 <input type="checkbox" name="chocolate" id="chocolate" />
                 <label for="chocolate" class="sort_value">шоколадные</label>
@@ -190,12 +198,14 @@
         <h2>Список товаров</h2>
         <ul class="ice_creams_list list_appearance">
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/orangeIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/orangeIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">310&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -204,12 +214,14 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/coffeeIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/coffeeIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">380&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -218,12 +230,14 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/strawberryIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/strawberryIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">355&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -232,12 +246,14 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/cremeBrulee.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/cremeBrulee.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">415&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -246,24 +262,28 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/lingonberryJamIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/lingonberryJamIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">325&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#">Сливочное с брусничным джемом</a>
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/blueberryIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/blueberryIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">410&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -272,7 +292,14 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img src="img/optimizedJPEG/lemonIceCream.jpg" alt="" />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/lemonIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">315&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -281,24 +308,28 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/iceCreamWithChocolatePowder.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/iceCreamWithChocolatePowder.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">320&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#">Сливочное с шоколадной стружкой</a>
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/vanillaIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/vanillaIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">440&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -307,24 +338,29 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/mentholIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/mentholIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
+
             <p class="item_price">435&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#">Сливочноe с ментоловым сиропом</a>
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/blackChocolateIceCream.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/blackChocolateIceCream.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">355&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#"
@@ -333,12 +369,14 @@
             </h3>
           </li>
           <li class="ice_creams_item">
-            <img
-              src="img/optimizedJPEG/iceCreamWithMintSyrup.jpg"
-              alt=""
-              width="267"
-              height="267"
-            />
+            <div class="ice_creams_img">
+              <img
+                src="img/optimizedJPEG/iceCreamWithMintSyrup.jpg"
+                alt=""
+                width="267"
+                height="267"
+              />
+            </div>
             <p class="item_price">420&#x20bd;<sub>/кг</sub></p>
             <h3>
               <a class="link" href="#">Сливочное с мятным сиропом</a>
@@ -346,16 +384,16 @@
           </li>
         </ul>
         <ul class="list_appearance pages_list">
-          <li>
-            <a class="link">1</a>
+          <li class="pages_list_item current_page">
+            <a class="link current_page_link">1</a>
           </li>
-          <li>
+          <li class="pages_list_item">
             <a class="link" href="#">2</a>
           </li>
-          <li>
+          <li class="pages_list_item">
             <a class="link" href="#">3</a>
           </li>
-          <li>
+          <li class="pages_list_item">
             <a class="link" href="#">4</a>
           </li>
         </ul>
@@ -364,7 +402,7 @@
 
     <footer class="main_footer container">
       <section class="footer_social">
-        <h2>Социальные сети</h2>
+        <h2 class="visually_hidden">Социальные сети</h2>
 
         <ul class="social_list list_appearance">
           <li class="social_item"><a class="link" href="#">Facebook</a></li>
@@ -374,7 +412,7 @@
         </ul>
       </section>
       <section class="footer_info">
-        <h2>Общая информация</h2>
+        <h2 class="visually_hidden">Общая информация</h2>
         <ul class="footer_info_list list_appearance">
           <li class="footer_info_item">
             <a class="link" href="#">Для поставщиков</a>

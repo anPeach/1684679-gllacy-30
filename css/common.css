@@ -1171,12 +1171,14 @@
 }
 
 .current_page {
+  box-sizing: border-box;
   width: 26px;
   height: 26px;
   background-color: var(--text-basic-color-white);
   border-radius: 50%;
   text-align: center;
   margin-right: 12px;
+  padding-top: 2px;
 }
 
 .current_page_link {

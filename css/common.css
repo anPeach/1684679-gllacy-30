@@ -46,6 +46,8 @@
   color: var(--text-basic-color-white);
   font-size: 16px;
   line-height: 22px;
+  background-color: var(--background-green);
+
 
   min-height: 100%;
   display: grid;

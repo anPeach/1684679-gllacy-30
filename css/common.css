@@ -70,6 +70,11 @@
   color: #ffbc9e;
 }
 
+.phone_number {
+  color: var(--text-basic-color-white);
+  text-decoration: none;
+}
+
 .visually_hidden {
   position: absolute;
   width: 1px;
@@ -214,6 +219,7 @@
   justify-self: end;
   display: flex;
   margin-top: 25px;
+  margin-right:  -10px;
 }
 
 .user_actions_button:hover {
@@ -222,7 +228,11 @@
 }
 
 .user_actions_button:hover path {
-  fill: var(--text-basic-color-black);
+  fill: var(--text-basic-color-black)
+}
+
+.user_actions_button:hover .red_part {
+  fill: #E84D37;
 }
 
 .user_actions_item button {
@@ -398,10 +408,74 @@
   z-index: 10;
 }
 
-.cart_form input[type="submit"] {
-  margin-left: 325px;
-  margin-top: 150px;
+.empty_cart {
+  height: 90px;
+  bottom: -135px;
 }
+
+.cart_form input[type="submit"] {
+  margin-left: 340px;
+  line-height: 18px;
+  width: 170px;
+  height: 45px;
+}
+
+.modal_cart .fill_cart {
+  background-color: var(--text-basic-color-white);
+  color: var(--text-basic-color-black)
+}
+
+.order_list {
+  display: grid;
+  row-gap: 20px;
+  padding: 0;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.order_item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35px 240px max-content max-content;
+  column-gap: 10px;
+  color: var(--text-basic-color-black);
+  font-weight: 400;
+  align-items: center;
+}
+
+.order_item p {
+  margin: 0;
+}
+
+.order_img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.order_img::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/optimized_svg/close.svg);
+  top: 10px;
+  left: -20px;
+}
+
+.gray_text {
+  opacity: 0.4;
+}
+
+.order_sum {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: var(--text-basic-color-black);
+  margin-left: 400px;
+}
+
 
 .header_info {
   grid-column: -2/-1;
@@ -435,17 +509,17 @@
 
 .page_background_first {
   background-color: #9d8b84;
-  background-image: url("../img/optimizedPNG/background_first.png");
+  background-image: url("../img/optimized_png/background_first.png");
 }
 
 .page_background_second {
   background-color: #8996a6;
-  background-image: url("../img/optimizedPNG/background_second.png");
+  background-image: url("../img/optimized_png/background_second.png");
 }
 
 .page_background_third {
   background-color: #849d8f;
-  background-image: url("../img/optimizedPNG/background_third.png");
+  background-image: url("../img/optimized_png/background_third.png");
 }
 
 .slider {
@@ -537,12 +611,12 @@
 }
 
 .shares_item_raspberry {
-  background-image: url(../img/optimizedJPEG/raspberryBackground.jpg);
+  background-image: url(../img/optimized_jpeg/raspberry_background.jpg);
   border-radius: 19px;
 }
 
 .shares_item_chocolate {
-  background-image: url(../img/optimizedJPEG/chocolateBackground.jpg);
+  background-image: url(../img/optimized_jpeg/chocolate_background.jpg);
   border-radius: 19px;
 }
 
@@ -557,12 +631,14 @@
 
 .button_jam {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 375px;
   margin-top: 40px;
 }
 
 .button_chocolate {
   display: inline-block;
+  vertical-align: middle;
   margin-left: 347px;
   margin-top: 40px;
 }
@@ -623,7 +699,7 @@
 }
 
 .main_info {
-  background-image: url(../img/optimizedJPEG/waffleBackground.jpg);
+  background-image: url(../img/optimized_jpeg/waffle_background.jpg);
   background-repeat: no-repeat;
   border-radius: 19px;
   width: 1145px;
@@ -671,7 +747,7 @@
 
 .new {
   color: var(--text-basic-color-black);
-  background-image: url(../img/optimizedJPEG/strawberryBackground.jpg);
+  background-image: url(../img/optimized_jpeg/strawberry_background.jpg);
   width: 560px;
   height: 220px;
   border-radius: 19px;
@@ -707,7 +783,7 @@
 .follow {
   font-weight: 400;
   color: var(--text-basic-color-black);
-  background-image: url(../img/optimizedJPEG/postBackground.jpg);
+  background-image: url(../img/optimized_jpeg/post_background.jpg);
   width: 560px;
   height: 220px;
   border-radius: 19px;
@@ -787,6 +863,10 @@
   margin-top: 7px;
 }
 
+.contacts_phone_number {
+  color: var(--text-basic-color-black);
+}
+
 .contacts .button {
   margin-top: 30px;
   width: 255px;
@@ -829,14 +909,6 @@
   height: 130px;
   resize: none;
   padding-top: 15px;
-}
-
-.modal_form .button {
-  width: 140px;
-  height: 45px;
-  padding-top: 10px;
-  margin-top: 25px;
-  margin-left: 285px;
 }
 
 .breadcrumbs {
@@ -948,7 +1020,7 @@
   height: 10px;
   top: 35px;
   left: 170px;
-  background-image: url(../img/optimizedSVG/triangle.svg);
+  background-image: url(../img/optimized_svg/triangle.svg);
 }
 
 .sort_select select {
@@ -1083,13 +1155,13 @@
   height: 20px;
   left: 5px;
   background-repeat: no-repeat;
-  background-image: url("../img/optimizedSVG/checkbox-off.svg");
+  background-image: url("../img/optimized_svg/checkbox-off.svg");
   top: 50%;
   transform: translateY(-50%);
 }
 
 .checkbox_input:checked + .checkbox_label::before {
-  background-image: url("../img/optimizedSVG/checkbox-on.svg");
+  background-image: url("../img/optimized_svg/checkbox-on.svg");
 }
 
 .background_transparent_white {

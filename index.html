@@ -16,7 +16,7 @@
     <header class="main_header container">
       <a href="index.html" class="main_header_logo">
         <img
-          src="img/optimizedSVG/logo.svg"
+          src="img/optimized_svg/logo.svg"
           width="154"
           height="64"
           alt="Gllacy shop"
@@ -31,8 +31,9 @@
               >Каталог</a
             >
             <ul class="catalog_list list_appearance">
-
-              <li class="catalog_item"><a class="link link_new" href="#">Новинки</a></li>
+              <li class="catalog_item">
+                <a class="link link_new" href="#">Новинки</a>
+              </li>
               <li>
                 <div class="decorative_line"></div>
               </li>
@@ -62,9 +63,8 @@
       <ul class="user_actions_list list_appearance">
         <li class="user_actions_item">
           <section class="modal_searching">
-
             <button class="user_actions_search user_actions_button">
-              <svg
+              <svg class="search_img"
                 width="16"
                 height="16"
                 fill="none"
@@ -86,7 +86,7 @@
           <section class="modal_login">
             <h2 class="visually_hidden">Личный кабинет</h2>
             <button class="user_actions_enter user_actions_button">
-              <svg
+              <svg class="enter_img"
                 width="20"
                 height="19"
                 fill="none"
@@ -119,7 +119,7 @@
         <li class="user_actions_item">
           <section class="modal_cart">
             <button class="user_actions_cart user_actions_button">
-              <svg
+              <svg class="cart_img"
                 width="21"
                 height="20"
                 fill="none"
@@ -132,7 +132,9 @@
               </svg>
               <span>Пусто</span>
             </button>
-            <form class="modal cart_form" action="#" method="POST">
+            <form class="modal cart_form empty_cart" action="#" method="POST">
+              <div class="decorative_line"></div>
+              <p class="order_sum">Итого: 0 руб.</p>
               <input class="button" type="submit" value="Оформить заказ" />
             </form>
           </section>
@@ -140,7 +142,9 @@
       </ul>
       <section class="header_info">
         <p>с 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+        <p>
+          <a class="phone_number" href="tel:88124502525">8 812 450-25-25</a>
+        </p>
       </section>
     </header>
 
@@ -156,7 +160,9 @@
             <a class="link button" href="#">Давайте оба!</a>
           </li>
           <li class="slider_item slide slide_current">
-            <h3 class="slide_title">Пломбир с помадкой<br>и клубничный щербет</h3>
+            <h3 class="slide_title">
+              Пломбир с помадкой<br />и клубничный щербет
+            </h3>
             <a class="link button" href="#">Давайте оба!</a>
           </li>
         </ul>
@@ -214,7 +220,7 @@
             </div>
             <div class="ice_creams_img">
               <img
-                src="img/optimizedJPEG/orangeIceCream.jpg"
+                src="img/optimized_jpeg/orange.jpg"
                 alt=""
                 width="267"
                 height="267"
@@ -243,7 +249,7 @@
             </div>
             <div class="ice_creams_img">
               <img
-                src="img/optimizedJPEG/coffeeIceCream.jpg"
+                src="img/optimized_jpeg/coffee.jpg"
                 alt=""
                 width="267"
                 height="267"
@@ -272,7 +278,7 @@
             </div>
             <div class="ice_creams_img">
               <img
-                src="img/optimizedJPEG/strawberryIceCream.jpg"
+                src="img/optimized_jpeg/strawberry.jpg"
                 alt=""
                 width="267"
                 height="267"
@@ -301,7 +307,7 @@
             </div>
             <div class="ice_creams_img">
               <img
-                src="img/optimizedJPEG/cremeBrulee.jpg"
+                src="img/optimized_jpeg/creme_brulee.jpg"
                 alt=""
                 width="267"
                 height="267"
@@ -468,7 +474,9 @@
           </p>
 
           <p>Для заказов по телефону:</p>
-          <p class="contacts_item contacts_item_phone">8 812 450-25-25</p>
+          <p class="contacts_item contacts_item_phone">
+            <a class="phone_number contacts_phone_number" href="tel:88124502525">8 812 450-25-25</a>
+          </p>
           <p>(с 10 до 20 ежедневно)</p>
 
           <button class="button" type="button">Форма обратной связи</button>

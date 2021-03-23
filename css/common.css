@@ -48,7 +48,6 @@
   line-height: 22px;
   background-color: var(--background-green);
 
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -219,7 +218,7 @@
   justify-self: end;
   display: flex;
   margin-top: 25px;
-  margin-right:  -10px;
+  margin-right: -10px;
 }
 
 .user_actions_button:hover {
@@ -228,11 +227,11 @@
 }
 
 .user_actions_button:hover path {
-  fill: var(--text-basic-color-black)
+  fill: var(--text-basic-color-black);
 }
 
 .user_actions_button:hover .red_part {
-  fill: #E84D37;
+  fill: #e84d37;
 }
 
 .user_actions_item button {
@@ -422,7 +421,7 @@
 
 .modal_cart .fill_cart {
   background-color: var(--text-basic-color-white);
-  color: var(--text-basic-color-black)
+  color: var(--text-basic-color-black);
 }
 
 .order_list {
@@ -475,7 +474,6 @@
   color: var(--text-basic-color-black);
   margin-left: 400px;
 }
-
 
 .header_info {
   grid-column: -2/-1;
@@ -674,7 +672,6 @@
 }
 
 .ice_creams_img {
-  position: absolute;
   border-radius: 50%;
   overflow: hidden;
   width: 265px;
@@ -682,10 +679,9 @@
 }
 
 .item_price {
-  position: absolute;
   font-size: 45px;
   line-height: 45px;
-  margin-top: 205px;
+  margin-top: -60px;
 }
 
 .item_price span {
@@ -694,7 +690,7 @@
 }
 
 .ice_creams_name {
-  margin-top: 280px;
+  margin-top: -20px;
   text-align: center;
 }
 
@@ -1010,7 +1006,7 @@
 }
 
 .sort_select_option {
-  color: var(--text-basic-color-black)
+  color: var(--text-basic-color-black);
 }
 
 .sort_select::after {
@@ -1109,6 +1105,7 @@
   padding-left: 33px;
 }
 
+
 .radio_label::before,
 .radio_label::after {
   box-sizing: border-box;
@@ -1116,7 +1113,7 @@
   position: absolute;
   width: 22px;
   height: 22px;
-  border: 3px solid var(--text-basic-color-white);
+  border: 3px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   left: 5px;
 }
@@ -1185,12 +1182,43 @@
   margin-left: 10px;
 }
 
+.apply_button:hover {
+  background-color: var(--text-basic-color-white);
+  color: var(--text-basic-color-black);
+  font-weight: 500;
+}
+
+.apply_button:active {
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.6 );
+  border:0;
+}
+
+.button_quick_view {
+  margin-left: 30px;
+  display: none;
+}
+
 .catalog_ice_creams {
   display: grid;
 }
 
 .catalog_creams_item {
   margin-bottom: -25px;
+}
+
+.ice_cream_wrapper:hover {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  width: 265px;
+  height: 400px;
+  padding: 10px 15px 10px 15px;
+  margin-left: -15px;
+  z-index: 20;
+}
+
+.catalog_creams_item:hover input[type="button"] {
+  display: block;
 }
 
 .pages_list {
@@ -1202,6 +1230,7 @@
   position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .pages_list::before {
@@ -1209,12 +1238,12 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  top: 7px;
-  left: -25px;
+  top: 50%;
+  left: -20px;
   border-right: 2px solid var(--text-basic-color-white);
   border-bottom: 2px solid var(--text-basic-color-white);
   opacity: 0.2;
-  transform: rotate(135deg);
+  transform: translateY(-50%) rotate(135deg);
 }
 
 .pages_list::after {
@@ -1222,16 +1251,16 @@
   position: absolute;
   width: 8px;
   height: 8px;
-  top: 7px;
-  left: 150px;
+  top: 50%;
+  right: -25px;
   border-right: 2px solid var(--text-basic-color-white);
   border-bottom: 2px solid var(--text-basic-color-white);
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
 }
 
-
 .pages_list_item {
-  margin-right: 20px;
+  margin-right: 10px;
+  padding: 2px 8px;
 }
 
 .pages_list_item:last-child {
@@ -1248,13 +1277,27 @@
   height: 26px;
   background-color: var(--text-basic-color-white);
   border-radius: 50%;
-  text-align: center;
-  margin-right: 12px;
-  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .current_page_link {
   color: var(--text-basic-color-black);
+}
+
+.pages_list_item:hover {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages_list_item .link:hover {
+  color: var(--text-basic-color-white);
+
 }
 
 .main_footer {
